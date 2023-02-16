@@ -1,7 +1,14 @@
     <%= link_to "Add to list", new_list_bookmark_path(@list), class: 'btn btn-primary' %>
-<ul>
-  <% @list.bookmarks.each do |bookmark| %>
-    <%= bookmark.movie.title %>
-    <%= link_to "Delete", list_bookmark_path(@list, bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
-  <% end %>
-</ul>
+<div class="container mt-3">
+  <div class="row">
+    <% @list.bookmarks.each do |bookmark| %>
+      <div class="card col-md-4 border-rounded">
+        <%= image_tag "#{bookmark.movie.poster_url}", alt: 'Movie image', class:"card-img-top"%>
+        <div class="card-body">
+          <%= bookmark.movie.title %>
+          <%= link_to "Delete", list_bookmark_path(@list, bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
