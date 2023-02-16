@@ -45,6 +45,9 @@ gem "bootsnap", require: false
 # Use Sass to process CSS
 gem "sassc-rails"
 
+# beautify html
+gem 'htmlbeautifier'
+
 # gems to make things easier and nicer
 gem "autoprefixer-rails"
 gem "font-awesome-sass", "~> 6.1"
