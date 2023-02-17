@@ -10,7 +10,7 @@
   </div>
   <div class="container d-flex flex-column">
     <div class="container mt-3">
-      <div class="row flex-grow justify-content-center justify-content-lg-start">
+      <div class="row flex-grow justify-content-center justify-content-md-start justify-content-lg-start justify-content-sm-start">
         <% @list.bookmarks.each do |bookmark| %>
           <div class="card pt-3 col-sm-6  col-md-4 col-lg-3 rounded shadow">
             <%= image_tag "#{bookmark.movie.poster_url}", alt: 'Movie image', class:"card-img-top"%>
