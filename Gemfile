@@ -33,6 +33,9 @@ gem "jbuilder"
 # keep it secret, keep it safe
 gem "dotenv-rails", groups: [:development, :test]
 
+# cloudinary gem
+gem "cloudinary"
+
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"

@@ -27,3 +27,6 @@ class BookmarksController < ApplicationController
     params.require(:bookmark).permit(:comment, :movie_id, :list_id)
   end
 end
+
+# before_action :set_list, only: [:new, :create]
+# ^ look this up later! set list is the method
