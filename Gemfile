@@ -29,6 +29,11 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# keep api keys hidden and secret
+# keep it secret, keep it safe
+gem "dotenv-rails", groups: [:development, :test]
+
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
